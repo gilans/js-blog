@@ -1,0 +1,12 @@
+.social-media-bar__list {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.social-media-bar__icon {
+  margin-left: 16px;
+  > svg {
+    width: 20px;
+    height: 20px;
+  }
+}

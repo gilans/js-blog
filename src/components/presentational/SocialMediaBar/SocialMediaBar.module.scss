@@ -1,12 +1,31 @@
+@import "../../../styles/shared.scss";
+
+.social-media-bar__container {
+  display: inline-flex;
+  justify-content: center;
+}
+
 .social-media-bar__list {
   list-style-type: none;
   display: inline-flex;
+  justify-content: space-between;
 }
 
-.social-media-bar__icon {
+.social-media-bar__list--large {
+  width: 600px;
+}
+
+.social-media-bar__item {
   margin-left: 16px;
+  display: inline-flex;
   > svg {
     width: 20px;
     height: 20px;
   }
+}
+
+.social-media-bar__title {
+  margin: auto 15px;
+  text-transform: uppercase;
+  font: normal normal normal 14px/15px $primary-font;
 }

@@ -15,7 +15,13 @@
 .footer__copyright {
   font: normal normal normal 13px/14px $primary-font;
   color: $color-gray-principal;
-  margin: 0 auto;
+  margin: 20px auto 0;
+}
+
+.footer__attributions-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__attributions {
@@ -29,4 +35,8 @@
   > :hover {
     color: #000000;
   }
+}
+
+.footer__social-media-bar {
+  margin: 30px 0;
 }

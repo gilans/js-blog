@@ -1,4 +1,4 @@
-@import "../../../styles/shared.scss";
+@import "~styles/shared.scss";
 
 .navbar__container {
   width: 100%;
@@ -11,14 +11,20 @@
     display: inline-flex;
     list-style-type: none;
     margin: 0 auto;
-    > li {
-      margin: 0 16px;
-      text-transform: uppercase;
-      font: normal normal normal 16px/18px $primary-font;
-      cursor: pointer;
-    }
+
     > li:hover {
       color: #cbd5e0;
     }
+  }
+}
+
+.navbar__container > ul > li {
+  margin: 0 16px;
+  text-transform: uppercase;
+  font: normal normal normal 13px/15px $primary-font;
+  cursor: pointer;
+
+  @include desktop {
+    font: normal normal normal 16px/18px $primary-font;
   }
 }

@@ -1,4 +1,4 @@
-@import "../../../styles/shared.scss";
+@import "~styles/shared.scss";
 
 .footer__container {
   width: 100%;
@@ -13,9 +13,14 @@
 }
 
 .footer__copyright {
-  font: normal normal normal 13px/14px $primary-font;
+  font: normal normal normal 11px/12px $primary-font;
   color: $color-gray-principal;
   margin: 20px auto 0;
+
+  @include desktop {
+    font-size: 13px;
+    line-height: 14px;
+  }
 }
 
 .footer__attributions-container {
@@ -25,7 +30,7 @@
 }
 
 .footer__attributions {
-  font: normal normal normal 13px/14px $primary-font;
+  font: normal normal normal 10px/11px $primary-font;
   margin: 0 auto;
   color: $color-gray-principal;
   > a {
@@ -34,6 +39,11 @@
   }
   > :hover {
     color: #000000;
+  }
+
+  @include desktop {
+    font-size: 13px;
+    line-height: 14px;
   }
 }
 

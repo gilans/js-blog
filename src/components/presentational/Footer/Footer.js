@@ -1,18 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classNames from "classnames/bind";
+
+import SocialMediaBar from "../SocialMediaBar";
 
 import styles from "./Footer.module.scss";
-import SocialMediaBar from "../SocialMediaBar";
+
+const classnames = classNames.bind(styles);
 
 Footer.propTypes = {};
 
-function Footer(props) {
+function Footer({ className }) {
+  const containerClass = classnames(className, "footer__container");
   return (
-    <footer className={styles.footer__container}>
+    <footer className={containerClass}>
       <SocialMediaBar
         className={styles["footer__social-media-bar"]}
         showTitles
-      ></SocialMediaBar>
+      />
       <section className={styles["footer__attributions-container"]}>
         <p className={styles.footer__attributions}>
           Iconos diseñados por{" "}

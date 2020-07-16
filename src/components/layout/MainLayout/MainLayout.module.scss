@@ -1,4 +1,16 @@
+@import "~styles/shared.scss";
+
 .main-layout__container {
   max-width: 950px;
   margin: 0 auto;
+}
+
+.main-layout__footer,
+.main-layout__header {
+  margin: 15px 5px;
+
+  @include desktop {
+    max-width: 950px;
+    margin: 30px auto;
+  }
 }

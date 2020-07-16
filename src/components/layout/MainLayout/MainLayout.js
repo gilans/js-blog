@@ -9,11 +9,11 @@ MainLayout.propTypes = {};
 
 function MainLayout({ children }) {
   return (
-    <main className={styles["main-layout__container"]}>
-      <Header />
-      {children}
-      <Footer />
-    </main>
+    <>
+      <Header className={styles["main-layout__header"]} />
+      <main className={styles["main-layout__container"]}>{children}</main>
+      <Footer className={styles["main-layout__footer"]} />
+    </>
   );
 }
 

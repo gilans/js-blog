@@ -1,27 +1,51 @@
-@import "../../../styles/shared.scss";
+@import "~styles/shared.scss";
 
 .header__container {
-  margin: 30px;
+}
+
+.header__title {
+  margin: 15px auto 0;
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .header__upper-section {
   display: inline-flex;
+  align-items: center;
   width: 100%;
   justify-content: space-between;
 }
 
+.header__social-media-bar {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
 .header__text-logo {
-  font: normal normal normal 32px/48px $logo-font;
+  font: normal normal normal 24px/32px $logo-font;
   color: white;
   background: black;
   padding: 0 8px;
   border-radius: 10px 0 0;
+
+  @include desktop {
+    font: normal normal normal 32px/48px $logo-font;
+  }
 }
 
 .header__text {
-  font: normal normal normal 32px/48px $logo-font;
+  font: normal normal normal 24px/32px $logo-font;
   background-color: green;
   color: white;
   padding: 0 8px;
   border-radius: 0 0 10px 0;
+  @include desktop {
+    font: normal normal normal 32px/48px $logo-font;
+    padding: 0 8px;
+    border-radius: 0 0 10px 0;
+  }
 }

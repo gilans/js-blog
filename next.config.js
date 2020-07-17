@@ -3,7 +3,7 @@
 const debug = process.env.NODE_ENV !== "production";
 
 module.exports = {
-  assetPrefix: !debug ? "/pokeapp/" : "",
+  assetPrefix: !debug ? "https://gilans.github.io/js-blog/" : "",
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,

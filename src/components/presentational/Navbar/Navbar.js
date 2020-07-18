@@ -15,7 +15,11 @@ function Navbar(props) {
         <li>Categorias</li>
         <li>
           <Link href="/about" as={`${process.env.BACKEND_URL}/about`}>
-            <a href="/about" as={`${process.env.BACKEND_URL}/about`}>
+            <a
+              className={styles.navbar__link}
+              href="/about"
+              as={`${process.env.BACKEND_URL}/about`}
+            >
               Sobre Mi
             </a>
           </Link>

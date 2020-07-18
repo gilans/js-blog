@@ -28,3 +28,19 @@
     font: normal normal normal 16px/18px $primary-font;
   }
 }
+
+.navbar__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal normal normal 13px/15px $primary-font;
+  color: #000000;
+  cursor: pointer;
+
+  @include desktop {
+    font: normal normal normal 16px/18px $primary-font;
+  }
+}
+
+.navbar__link:hover {
+  color: #cbd5e0;
+}

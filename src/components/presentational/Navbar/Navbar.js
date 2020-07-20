@@ -24,7 +24,17 @@ function Navbar(props) {
             </a>
           </Link>
         </li>
-        <li>Contacto</li>
+        <li>
+          <Link href="/contact" as={`${process.env.BACKEND_URL}/about`}>
+            <a
+              className={styles.navbar__link}
+              href="/contact"
+              as={`${process.env.BACKEND_URL}/contact`}
+            >
+              Contacto
+            </a>
+          </Link>
+        </li>
       </ul>
     </nav>
   );

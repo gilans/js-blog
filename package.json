@@ -17,13 +17,19 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@zeit/next-sass": "^1.0.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "classnames": "^2.2.6",
-    "next": "9.4.4",
+    "next": "10.0.6",
     "poetic": "^1.5.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "prop-types": "^15.7.2",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
     "sass": "^1.26.10"
   },
   "devDependencies": {
@@ -34,6 +40,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.5.0",
+    "file-loader": "^6.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.1.0",
     "url-loader": "^4.1.0"

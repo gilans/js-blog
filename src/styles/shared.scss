@@ -14,3 +14,26 @@ $primary-font: "Roboto";
 */
 
 $color-gray-principal: #cbd5e0;
+
+.h1-title {
+  font-size: 3rem;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+
+  @include desktop {
+    font-size: 4rem;
+  }
+}
+
+.body {
+  font-size: 1rem;
+  font-family: Roboto;
+  letter-spacing: -0.003em;
+  line-height: 1.625;
+
+  @include desktop {
+    font-size: 1.25rem;
+  }
+}

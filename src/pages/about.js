@@ -1,15 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import MainLayout from "components/layout/MainLayout";
 
-about.propTypes = {};
+import About from "components/pages/About";
 
-function about(props) {
-  return (
-    <MainLayout>
-      <p>About </p>
-    </MainLayout>
-  );
+aboutPage.propTypes = {};
+
+function aboutPage(props) {
+  return <About />;
 }
 
-export default about;
+export default aboutPage;

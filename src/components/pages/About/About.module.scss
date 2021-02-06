@@ -1,0 +1,36 @@
+@import "~styles/shared.scss";
+.about__container {
+  padding: 0 1rem;
+}
+
+.about__title {
+  @extend .h1-title;
+}
+.about__content {
+  @extend .body;
+  color: #2d3748;
+}
+
+.about__image-container {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.about__content-container {
+  margin-top: 4rem;
+
+  p:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+.about__image {
+  width: 80%;
+  height: 80%;
+}
+.about__footer {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

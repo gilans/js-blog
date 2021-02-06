@@ -18,35 +18,9 @@ function Footer({ className }) {
         className={styles["footer__social-media-bar"]}
         showTitles
       />
-      <section className={styles["footer__attributions-container"]}>
-        <p className={styles.footer__attributions}>
-          Iconos diseñados por{" "}
-          <a
-            href="https://www.flaticon.es/autores/pixel-perfect"
-            title="Pixel perfect"
-          >
-            Pixel perfect
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.es/" title="Flaticon">
-            {" "}
-            www.flaticon.es
-          </a>
-        </p>
-        <p className={styles.footer__attributions}>
-          Iconos diseñados por{" "}
-          <a href="https://icon54.com/" title="Pixel perfect">
-            Pixel perfect
-          </a>{" "}
-          from{" "}
-          <a href="https://www.flaticon.es/" title="Flaticon">
-            www.flaticon.es
-          </a>
-        </p>
-      </section>
       <section className={styles["footer__copyright-container"]}>
         <p className={styles.footer__copyright}>
-          Copyright 2020 por Gilberto Suárez. Todos los derechos reservados
+          Copyright 2021 por Gilberto Suárez. Todos los derechos reservados
         </p>
       </section>
     </footer>

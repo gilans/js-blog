@@ -1,3 +1,5 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from "react";
 
 import MainLayout from "components/layout/MainLayout";

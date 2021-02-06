@@ -21,7 +21,7 @@
   display: none;
 
   @include desktop {
-    display: block;
+    display: inline-flex;
   }
 }
 

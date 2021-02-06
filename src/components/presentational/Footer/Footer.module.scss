@@ -29,24 +29,6 @@
   flex-direction: column;
 }
 
-.footer__attributions {
-  font: normal normal normal 10px/11px $primary-font;
-  margin: 0 auto;
-  color: $color-gray-principal;
-  > a {
-    color: $color-gray-principal;
-    text-decoration: none;
-  }
-  > :hover {
-    color: #000000;
-  }
-
-  @include desktop {
-    font-size: 13px;
-    line-height: 14px;
-  }
-}
-
 .footer__social-media-bar {
   margin: 30px 0;
 }

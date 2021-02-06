@@ -1,0 +1,23 @@
+@import "~styles/shared.scss";
+
+.social-media-item__container {
+  margin-left: 16px;
+  display: inline-flex;
+  text-decoration: none;
+  color: #646566;
+  > svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.social-media-item__title {
+  display: none;
+  @include desktop {
+    display: block;
+
+    margin: auto 15px;
+    text-transform: uppercase;
+    font: normal normal normal 14px/15px $primary-font;
+  }
+}

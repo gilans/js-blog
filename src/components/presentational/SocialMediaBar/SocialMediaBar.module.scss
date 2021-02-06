@@ -17,23 +17,3 @@
     width: 600px;
   }
 }
-
-.social-media-bar__item {
-  margin-left: 16px;
-  display: inline-flex;
-  > svg {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-.social-media-bar__title {
-  display: none;
-  @include desktop {
-    display: block;
-
-    margin: auto 15px;
-    text-transform: uppercase;
-    font: normal normal normal 14px/15px $primary-font;
-  }
-}

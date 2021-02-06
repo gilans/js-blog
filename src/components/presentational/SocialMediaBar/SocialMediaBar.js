@@ -2,12 +2,17 @@ import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames/bind";
 
-import { ReactComponent as IconLinkedin } from "assets/icons/linkedin.svg";
-import { ReactComponent as IconInstagram } from "assets/icons/instagram.svg";
-import { ReactComponent as IconGithub } from "assets/icons/github.svg";
-import { ReactComponent as IconTwitter } from "assets/icons/twitter.svg";
+import {
+  faTwitter,
+  faInstagram,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import styles from "./SocialMediaBar.module.scss";
+import SocialMediaItem from "../SocialMediaItem";
+
 const classnames = classNames.bind(styles);
 
 function SocialMediaBar({ className, showTitles }) {
@@ -25,28 +30,44 @@ function SocialMediaBar({ className, showTitles }) {
     <div className={containerClass}>
       <ul className={listClass}>
         <li className={styles["social-media-bar__item"]}>
-          <IconTwitter />
-          {showTitles && (
-            <span className={styles["social-media-bar__title"]}>twitter</span>
-          )}
+          <SocialMediaItem
+            icon={faTwitter}
+            showTitles={showTitles}
+            href="https://twitter.com/suarezgilberto"
+            target="_blank"
+          >
+            twitter
+          </SocialMediaItem>
         </li>
         <li className={styles["social-media-bar__item"]}>
-          <IconInstagram />
-          {showTitles && (
-            <span className={styles["social-media-bar__title"]}>instagram</span>
-          )}
+          <SocialMediaItem
+            icon={faInstagram}
+            showTitles={showTitles}
+            href="https://www.instagram.com/gilbertosuarez1066"
+            target="_blank"
+          >
+            instagram
+          </SocialMediaItem>
         </li>
         <li className={styles["social-media-bar__item"]}>
-          <IconLinkedin />
-          {showTitles && (
-            <span className={styles["social-media-bar__title"]}>linkedin</span>
-          )}
+          <SocialMediaItem
+            icon={faLinkedin}
+            showTitles={showTitles}
+            href="https://www.linkedin.com/in/gilberto-suarez-1745a7a1"
+            target="_blank"
+          >
+            linkedin
+          </SocialMediaItem>
         </li>
         <li className={styles["social-media-bar__item"]}>
-          <IconGithub />
-          {showTitles && (
-            <span className={styles["social-media-bar__title"]}>github</span>
-          )}
+          <SocialMediaItem
+            icon={faGithub}
+            showTitles={showTitles}
+            href="https://github.com/gilans"
+            target="_blank"
+          >
+            github
+          </SocialMediaItem>
         </li>
       </ul>
     </div>

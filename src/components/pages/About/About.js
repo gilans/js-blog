@@ -34,7 +34,7 @@ function About() {
           <p className={styles["about__image-container"]}>
             <img
               className={styles.about__image}
-              src="/static/images/about-desktop.png"
+              src="static/images/about-desktop.png"
               alt="about"
             />
           </p>

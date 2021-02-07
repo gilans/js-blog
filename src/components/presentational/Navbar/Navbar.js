@@ -11,8 +11,17 @@ function Navbar(props) {
   return (
     <nav className={styles.navbar__container}>
       <ul>
-        <li>Blog</li>
-        <li>Categorias</li>
+        <li>
+          <Link href="/blog" as={`${process.env.BACKEND_URL}/blog`}>
+            <a
+              className={styles.navbar__link}
+              href="/blog"
+              as={`${process.env.BACKEND_URL}/blog`}
+            >
+              Blog
+            </a>
+          </Link>
+        </li>
         <li>
           <Link href="/about" as={`${process.env.BACKEND_URL}/about`}>
             <a
@@ -25,7 +34,7 @@ function Navbar(props) {
           </Link>
         </li>
         <li>
-          <Link href="/contact" as={`${process.env.BACKEND_URL}/about`}>
+          <Link href="/contact" as={`${process.env.BACKEND_URL}/contact`}>
             <a
               className={styles.navbar__link}
               href="/contact"

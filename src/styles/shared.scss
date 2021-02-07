@@ -27,6 +27,18 @@ $color-gray-principal: #cbd5e0;
   }
 }
 
+.h2-title {
+  font-size: 2rem;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+
+  @include desktop {
+    font-size: 3rem;
+  }
+}
+
 .body {
   font-size: 1rem;
   font-family: Roboto;

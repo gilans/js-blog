@@ -1,10 +1,9 @@
 @import "~styles/shared.scss";
 
-.header__container {
-}
-
 .header__title {
   margin: 15px auto 0;
+  text-decoration: none;
+
   @include desktop {
     margin: 0;
   }

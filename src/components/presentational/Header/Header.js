@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 import PropTypes from "prop-types";
 import classNames from "classnames/bind";
 
@@ -16,10 +18,16 @@ function Header({ className }) {
   return (
     <header className={containerClass}>
       <section className={styles["header__upper-section"]}>
-        <div className={styles.header__title}>
-          <span className={styles["header__text-logo"]}>{"<GS/>"}</span>
-          <span className={styles.header__text}>gilbertosuarez.com</span>{" "}
-        </div>
+        <Link href="/" as={`${process.env.BACKEND_URL}/`}>
+          <a
+            className={styles.header__title}
+            href="/"
+            as={`${process.env.BACKEND_URL}/`}
+          >
+            <span className={styles["header__text-logo"]}>{"<GS/>"}</span>
+            <span className={styles.header__text}>gilbertosuarez.com</span>{" "}
+          </a>
+        </Link>
         <SocialMediaBar className={styles["header__social-media-bar"]} />
       </section>
       <Navbar />

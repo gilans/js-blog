@@ -1,15 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import MainLayout from "components/layout/MainLayout";
+import Contact from "components/pages/Contact";
 
-contact.propTypes = {};
+contactPage.propTypes = {};
 
-function contact(props) {
-  return (
-    <MainLayout>
-      <p>Contact </p>
-    </MainLayout>
-  );
+function contactPage() {
+  return <Contact />;
 }
 
-export default contact;
+export default contactPage;

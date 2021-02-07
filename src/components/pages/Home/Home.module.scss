@@ -1,10 +1,37 @@
+@import "~styles/shared.scss";
 .home__container {
-  overflow-x: hidden;
-  > h1 {
-    color: blue;
+  padding: 0 1rem;
+}
+
+.home__title {
+  @extend .h2-title;
+}
+.home__content {
+  @extend .body;
+  color: #2d3748;
+}
+
+.home__image-container {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  img {
+    border-radius: 8px;
   }
 }
 
+.home__content-container {
+  margin-top: 4rem;
+
+  p:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+.home__image {
+  width: 50%;
+  height: 50%;
+  border-radius: 8px;
+}
 .home__footer {
   height: 100px;
   display: flex;

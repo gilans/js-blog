@@ -1,0 +1,35 @@
+@import "~styles/shared.scss";
+
+.blog-item__container {
+  width: 100%;
+  background: #727070;
+  list-style: none;
+  color: #ffffff;
+}
+
+.blog-item2__container > ul > li {
+  margin: 0 16px;
+  text-transform: uppercase;
+  font: normal normal normal 13px/15px $primary-font;
+  cursor: pointer;
+
+  @include desktop {
+    font: normal normal normal 16px/18px $primary-font;
+  }
+}
+
+.blog-item2__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font: normal normal normal 13px/15px $primary-font;
+  color: #000000;
+  cursor: pointer;
+
+  @include desktop {
+    font: normal normal normal 16px/18px $primary-font;
+  }
+}
+
+.blog-item2__link:hover {
+  color: #cbd5e0;
+}

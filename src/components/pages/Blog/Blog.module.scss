@@ -1,34 +1,34 @@
 @import "~styles/shared.scss";
-.about__container {
+.blog__container {
   padding: 0 1rem;
 }
 
-.about__title {
+.blog__title {
   @extend .h1-title;
 }
-.about__content {
+.blog__content {
   @extend .body;
   color: #2d3748;
 }
 
-.about__image-container {
+.blog__image-container {
   display: inline-flex;
   justify-content: center;
 }
 
-.about__content-container {
+.blog__content-container {
   margin-top: 4rem;
 
   p:not(:first-child) {
     margin-top: 20px;
   }
 }
-.about__image {
+.blog__image {
   width: 80%;
   height: 80%;
   border-radius: 8px;
 }
-.about__footer {
+.blog__footer {
   height: 100px;
   display: flex;
   flex-direction: row;

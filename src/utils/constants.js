@@ -1,6 +1,10 @@
-/* eslint-disable import/prefer-default-export */
-const POKE_API = "https://pokeapi.co/api/v2/";
-const POKE_IMAGE_API = "https://pokeres.bastionbot.org/images/pokemon/";
-const getPokemonsDefaultLimit = 6;
+const socialMediaUrl = {
+  twitter: "https://twitter.com/suarezgilberto",
+  instagram: "https://www.instagram.com/gilbertosuarez1066",
+  linkedin: "https://www.linkedin.com/in/gilberto-suarez-1745a7a1",
+  github: "https://github.com/gilans",
+};
 
-export { POKE_API, POKE_IMAGE_API, getPokemonsDefaultLimit };
+const emailAddress = "suarezgilberto@hotmail.com";
+
+export { emailAddress, socialMediaUrl };

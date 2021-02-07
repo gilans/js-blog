@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import { socialMediaUrl } from "utils/constants";
 import styles from "./SocialMediaBar.module.scss";
 import SocialMediaItem from "../SocialMediaItem";
 
@@ -33,7 +34,7 @@ function SocialMediaBar({ className, showTitles }) {
           <SocialMediaItem
             icon={faTwitter}
             showTitles={showTitles}
-            href="https://twitter.com/suarezgilberto"
+            href={socialMediaUrl.twitter}
             target="_blank"
           >
             twitter
@@ -43,7 +44,7 @@ function SocialMediaBar({ className, showTitles }) {
           <SocialMediaItem
             icon={faInstagram}
             showTitles={showTitles}
-            href="https://www.instagram.com/gilbertosuarez1066"
+            href={socialMediaUrl.instagram}
             target="_blank"
           >
             instagram
@@ -53,7 +54,7 @@ function SocialMediaBar({ className, showTitles }) {
           <SocialMediaItem
             icon={faLinkedin}
             showTitles={showTitles}
-            href="https://www.linkedin.com/in/gilberto-suarez-1745a7a1"
+            href={socialMediaUrl.linkedin}
             target="_blank"
           >
             linkedin
@@ -63,7 +64,7 @@ function SocialMediaBar({ className, showTitles }) {
           <SocialMediaItem
             icon={faGithub}
             showTitles={showTitles}
-            href="https://github.com/gilans"
+            href={socialMediaUrl.github}
             target="_blank"
           >
             github

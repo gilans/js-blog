@@ -1,34 +1,39 @@
 @import "~styles/shared.scss";
-.about__container {
+.contact__container {
   padding: 0 1rem;
 }
 
-.about__title {
+.contact__title {
   @extend .h1-title;
 }
-.about__content {
+.contact__content {
   @extend .body;
   color: #2d3748;
+  a {
+    text-decoration: none;
+    color: #6391e0;
+  }
 }
 
-.about__image-container {
+.contact__image-container {
   display: inline-flex;
   justify-content: center;
+  width: 100%;
 }
 
-.about__content-container {
+.contact__content-container {
   margin-top: 4rem;
 
   p:not(:first-child) {
     margin-top: 20px;
   }
 }
-.about__image {
-  width: 80%;
-  height: 80%;
+.contact__image {
+  width: 50%;
+  height: 50%;
   border-radius: 8px;
 }
-.about__footer {
+.contact__footer {
   height: 100px;
   display: flex;
   flex-direction: row;
